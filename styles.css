@@ -15,12 +15,12 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity here */
     z-index: 1;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background for header */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark background for header */
     padding: 20px;
     text-align: center;
     color: white;
@@ -45,7 +45,7 @@ main {
 .topic-card {
     flex: 1 1 30%;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -54,7 +54,7 @@ main {
 }
 
 .topic-card:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #featured-blogs {
@@ -70,7 +70,7 @@ main {
 
 .featured-card {
     flex: 1 1 calc(25% - 20px);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -80,11 +80,11 @@ main {
 }
 
 .featured-card:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark background for footer */
     padding: 10px;
     text-align: center;
     color: white;
