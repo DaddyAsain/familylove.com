@@ -6,6 +6,8 @@
     <title>&#x2764; FamilyLove.fun - &#x1F497; Blogs</title>
     <style>
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
             background-image: url('background.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -19,56 +21,109 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+            background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity here */
             z-index: 1;
         }
-        header, main, footer {
+        header {
+            background-color: rgba(0, 0, 0, 0.4); /* Dark background for header */
+            padding: 20px;
+            text-align: center;
+            color: white;
             position: relative;
             z-index: 2;
         }
-        header h1 {
-            color: white; /* Ensure header text is readable */
-        }
         main {
             padding: 20px;
-            color: white; /* Ensure article text is readable */
+            position: relative;
+            z-index: 2;
+            color: white;
         }
-        article {
+        section {
+            margin-top: 20px;
+        }
+        .topic-cards {
+            display: flex;
+            justify-content: space-around;
             margin-bottom: 20px;
+        }
+        .topic-card {
+            width: 30%;
+            background-color: rgba(0, 0, 0, 0.4);
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.3); /* Optional: Background color for articles */
-            border-radius: 8px; /* Optional: Rounded corners for articles */
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
         }
-        article h2 {
-            color: white; /* Ensure article titles are readable */
+        .topic-card:hover {
+            background-color: rgba(0, 0, 0, 0.4);
         }
-        article p, article small {
-            color: white; /* Ensure article text and date are readable */
+        .featured-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .featured-card {
+            width: 23%;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .featured-card:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.4); /* Dark background for footer */
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>FamilyLove.fun - A Home for Lovely Blogs</h1>
+        <div class="topic-cards">
+            <div class="topic-card" onclick="window.location.href='life.html';">
+                <h2>Life</h2>
+                <p>Explore life-related blogs</p>
+            </div>
+            <div class="topic-card" onclick="window.location.href='sports.html';">
+                <h2>Sports</h2>
+                <p>Explore sports-related blogs</p>
+            </div>
+            <div class="topic-card" onclick="window.location.href='miscellaneous.html';">
+                <h2>Miscellaneous</h2>
+                <p>Explore miscellaneous blogs</p>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="posts">
-            <article>
-                <h2><a href="post1.html">The Impact of Climate Change</a></h2>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_WQZ50fWPWJwvhnjEB4_7davzY-Kk-3HZw&s"></a>
-                <p>Climate change is one of the most pressing issues of our time, affecting ecosystems and communities globally.</p>
-                <small>Posted on 2024-07-10</small>
-            </article>
-            <article>
-                <h2><a href="posts/post2.html">The Rise of Artificial Intelligence</a></h2>
-                <p>Artificial Intelligence (AI) is revolutionizing industries, from healthcare to finance, creating new opportunities and challenges.</p>
-                <small>Posted on 2024-07-09</small>
-            </article>
-            <article>
-                <h2><a href="posts/post3.html">Exploring the Depths of the Ocean</a></h2>
-                <p>The ocean covers more than 70% of the Earth’s surface, yet much of it remains unexplored, holding mysteries and wonders.</p>
-                <small>Posted on 2024-07-08</small>
-            </article>
+        <section id="featured-blogs">
+            <h2>Featured Blogs</h2>
+            <div class="featured-cards">
+                <div class="featured-card" onclick="window.location.href='blog1.html';">
+                    <h3>Featured Blog 1</h3>
+                    <p>Short description or teaser</p>
+                </div>
+                <div class="featured-card" onclick="window.location.href='blog2.html';">
+                    <h3>Featured Blog 2</h3>
+                    <p>Short description or teaser</p>
+                </div>
+                <div class="featured-card" onclick="window.location.href='blog3.html';">
+                    <h3>Featured Blog 3</h3>
+                    <p>Short description or teaser</p>
+                </div>
+                <div class="featured-card" onclick="window.location.href='blog4.html';">
+                    <h3>Featured Blog 4</h3>
+                    <p>Short description or teaser</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
