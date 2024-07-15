@@ -3,26 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>&#x2764; FamilyLove.fun- &#x1F497;blogs</title>
-    
-    
-    <link rel="stylesheet" href="css/styles.css">
-
+    <title>&#x2764; FamilyLove.fun - &#x1F497; Blogs</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+            z-index: 1;
+        }
+        header, main, footer {
+            position: relative;
+            z-index: 2;
+        }
+        header h1 {
+            color: white; /* Ensure header text is readable */
+        }
+        main {
+            padding: 20px;
+            color: white; /* Ensure article text is readable */
+        }
+        article {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3); /* Optional: Background color for articles */
+            border-radius: 8px; /* Optional: Rounded corners for articles */
+        }
+        article h2 {
+            color: white; /* Ensure article titles are readable */
+        }
+        article p, article small {
+            color: white; /* Ensure article text and date are readable */
+        }
+    </style>
 </head>
 <body>
     <header>
-        
-        <h1>familylove.fun - a home for lovely blogs</h1>
-        <a href="https://i.pinimg.com/736x/f4/e8/4d/f4e84d381104736d7f655095c747cc04.jpg">follow this image 1</a>
-        <nav>
-            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fletsenhance.io%2F&psig=AOvVaw2f3qngNNnKOfoZzYLMh7r8&ust=1720701951207000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjD8LbAnIcDFQAAAAAdAAAAABAE">image 2</a>
-        </nav>
+        <h1>FamilyLove.fun - A Home for Lovely Blogs</h1>
     </header>
     <main>
         <section id="posts">
             <article>
                 <h2><a href="post1.html">The Impact of Climate Change</a></h2>
-                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_WQZ50fWPWJwvhnjEB4_7davzY-Kk-3HZw&s"></a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_WQZ50fWPWJwvhnjEB4_7davzY-Kk-3HZw&s"></a>
                 <p>Climate change is one of the most pressing issues of our time, affecting ecosystems and communities globally.</p>
                 <small>Posted on 2024-07-10</small>
             </article>
@@ -43,4 +76,5 @@
     </footer>
 </body>
 </html>
+
 
