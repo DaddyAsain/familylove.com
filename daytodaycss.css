@@ -95,6 +95,7 @@ main {
     margin-bottom: 20px;
 }
 
+/* Card Styles */
 .featured-cards, .topic-cards {
     display: flex;
     flex-wrap: wrap;
@@ -109,15 +110,13 @@ main {
     transition: background-color 0.3s, transform 0.2s;
     flex: 1 1 300px;
     cursor: pointer;
+    color: #e0e0e0;
+    text-align: center;
 }
 
 .featured-card:hover, .topic-card:hover {
     background: linear-gradient(145deg, #333, #1e1e1e);
     transform: scale(1.02);
-}
-
-.card-content {
-    color: #e0e0e0;
 }
 
 .card-title {
@@ -126,6 +125,11 @@ main {
     margin-bottom: 10px;
 }
 
+.card-content {
+    color: #e0e0e0;
+}
+
+/* Sidebar */
 .sidebar {
     background-color: #1e1e1e;
     padding: 20px;
@@ -140,6 +144,7 @@ main {
 
 .related-blogs {
     list-style: none;
+    padding: 0;
 }
 
 .related-blogs li a {
@@ -154,6 +159,7 @@ main {
     color: #ffab00;
 }
 
+/* Sidenote */
 .sidenote {
     background-color: #ffcccb;
     color: #333;
@@ -162,6 +168,7 @@ main {
     margin: 20px 0;
 }
 
+/* Back to Homepage */
 .back-to-home {
     text-align: center;
     margin: 20px 0;
@@ -180,6 +187,7 @@ main {
     border-bottom-color: transparent;
 }
 
+/* Footer */
 footer {
     background-color: #1e1e1e;
     color: #e0e0e0;
@@ -191,4 +199,62 @@ footer {
 footer p {
     color: #ffab00;
     font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav a {
+        padding: 10px;
+    }
+
+    .featured-cards, .topic-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card, .topic-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .featured-card img, .topic-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .featured-section .section-title, .topic-section .section-title {
+        font-size: 1.5em;
+    }
+
+    .featured-card, .topic-card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .card-content {
+        font-size: 0.9em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
 }
