@@ -1,0 +1,294 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #1f1f1f; /* Darker background for header */
+    color: #e0e0e0; /* Light text color */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2.2em; /* Adjusted font size */
+    color: #ffab00; /* Bright color for header text */
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: center; /* Center the items horizontally */
+    gap: 15px; /* Space between navigation items */
+    background-color: #1c1c1c; /* Dark background for navigation */
+    padding: 10px 0;
+    border-bottom: 2px solid #444;
+}
+
+.main-nav a {
+    color: #e0e0e0; /* Light text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: #333;
+    color: #ffab00; /* Bright color on hover */
+    transform: scale(1.05);
+}
+
+nav.breadcrumb {
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a2a; /* Darker background for breadcrumbs */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+nav.breadcrumb a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light text color */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav.breadcrumb a:hover {
+    color: #ffab00; /* Bright color on hover */
+}
+
+nav.breadcrumb span {
+    color: #ffab00; /* Bright color for current page indicator */
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px; /* Adjusted max-width */
+    margin: 20px 0;
+    background-color: #1e1e1e; /* Dark background for card */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+    flex: 1 1 250px; /* Adjusted flex-basis */
+    background-color: #2a2a2a; /* Slightly lighter dark background for sidebar */
+    padding: 15px; /* Adjusted padding */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: #ffab00; /* Bright color for sidebar headings */
+}
+
+.related-blogs {
+    list-style: none;
+    padding: 0;
+}
+
+.related-blogs li {
+    background-color: #2e2e2e; /* Dark background for related blogs */
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px; /* Adjusted padding */
+    margin-bottom: 10px; /* Adjusted margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 200px; /* Ensure equal card size */
+}
+
+.related-blogs li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.related-blogs li a {
+    text-decoration: none;
+    color: #ffab00; /* Bright color for related blog links */
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s;
+}
+
+.related-blogs li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.related-blogs li p {
+    color: #e0e0e0; /* Light text color */
+    margin-top: 5px; /* Adjusted margin */
+}
+
+.sidenote {
+    background-color: #333; /* Dark background for sidenote */
+    border-left: 5px solid #ff6f6f; /* Accent color for sidenote */
+    padding: 10px; /* Adjusted padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 15px; /* Adjusted margin-top */
+}
+
+.sidenote h4 {
+    margin-bottom: 5px; /* Adjusted margin-bottom */
+    color: #ff6f6f; /* Accent color for sidenote heading */
+}
+
+.blog-post {
+    flex: 3 1 500px; /* Adjusted flex-basis */
+    background-color: #1e1e1e; /* Dark background for blog post */
+    padding: 15px; /* Adjusted padding */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    position: relative; /* For positioning share button */
+}
+
+.blog-post h2 {
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    color: #ffab00; /* Bright color for blog post heading */
+}
+
+.blog-post p {
+    margin: 10px 0; /* Adjusted margin */
+    line-height: 1.6;
+    color: #e0e0e0; /* Light text color */
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-to-home a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light text color */
+    background-color: #333; /* Dark background for button */
+    padding: 10px 15px; /* Adjusted padding */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-to-home a:hover {
+    background-color: #444;
+    color: #ffab00; /* Bright color on hover */
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1f1f1f; /* Dark background for footer */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0; /* Adjusted padding */
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px; /* Ensure there's space above footer */
+}
+
+footer p {
+    margin: 0;
+    color: #ffab00; /* Bright color for footer text */
+}
+
+.share-buttons {
+    position: absolute;
+    top: 15px; /* Adjusted position */
+    right: 15px; /* Adjusted position */
+    display: flex;
+    gap: 10px;
+}
+
+.share-buttons button {
+    background: #1c1c1c;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px 8px; /* Adjusted padding */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-buttons button:hover {
+    background-color: #333;
+}
+
+.media-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.responsive-image {
+    max-width: 70%; /* Adjusted max-width */
+    height: auto;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+}
+
+.video-container {
+    position: relative;
+    max-width: 70%; /* Adjusted max-width */
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 280px; /* Adjusted height */
+}
+
+.video-title {
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+/* Adjust the navigation menu for mobile view */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: row; /* Keep it horizontal */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+
+    .main-nav a {
+        padding: 8px;
+        margin: 5px; /* Adjusted margin for spacing */
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    .sidebar {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-top: 20px; /* Adjusted margin-top */
+    }
+
+    .related-blogs {
+        display: flex;
+        flex-direction: column; /* Stack vertically */
+        margin-top: 20px; /* Adjusted margin-top */
+    }
+
+    .related-blogs li {
+        flex: 1 1 auto; /* Ensure cards take up available space */
+    }
+}
