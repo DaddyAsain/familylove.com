@@ -24,16 +24,19 @@ header {
 
 header h1 {
     font-size: 2.5em;
+    color: #ffab00; /* Bright color for header text */
 }
 
+/* Main Navigation */
 .main-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between navigation items */
     background-color: #333;
     padding: 10px 0;
     border-bottom: 2px solid #444;
-    margin-bottom: 20px;
+    margin: 20px auto; /* Center the navigation bar */
+    width: 100%; /* Ensure it takes the full width */
 }
 
 .main-nav a {
@@ -50,6 +53,7 @@ header h1 {
     transform: scale(1.05);
 }
 
+/* Breadcrumb Navigation */
 nav.breadcrumb {
     display: flex;
     justify-content: center;
