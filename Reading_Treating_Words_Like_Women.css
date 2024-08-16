@@ -29,8 +29,9 @@ header h1 {
 
 .main-nav {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: center; /* Center the items horizontally */
+    gap: 15px; /* Space between navigation items */
     background-color: #1c1c1c; /* Dark background for navigation */
     padding: 10px 0;
     border-bottom: 2px solid #444;
@@ -263,63 +264,31 @@ footer p {
     color: #e0e0e0;
 }
 
-/* Responsive Design */
+/* Adjust the navigation menu for mobile view */
 @media (max-width: 768px) {
     .main-nav {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row; /* Keep it horizontal */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
     }
 
     .main-nav a {
         padding: 8px;
-        margin: 5px 0;
-    }
-
-    .card {
-        flex-direction: column;
-        gap: 10px;
+        margin: 5px; /* Adjusted margin for spacing */
+        font-size: 0.9em; /* Smaller font size */
     }
 
     .sidebar {
-        flex: 1 1 100%;
-        margin-top: 20px;
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-top: 20px; /* Adjusted margin-top */
     }
 
-    .blog-post {
-        flex: 1 1 100%;
-    }
-
-    .media-container img {
-        max-width: 100%;
-    }
-
-    .video-container iframe {
-        height: 200px; /* Adjusted for smaller screens */
+    .related-blogs {
+        display: flex;
+        flex-direction: column; /* Stack vertically */
+        margin-top: 20px; /* Adjusted margin-top */
     }
 
     .related-blogs li {
-        flex: 1 1 100%; /* Full width on small screens */
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.6em; /* Adjusted font size */
-    }
-
-    .main-nav a {
-        padding: 6px;
-    }
-
-    .card {
-        padding: 10px;
-    }
-
-    .blog-post p {
-        font-size: 0.9em; /* Adjusted font size */
-    }
-
-    .sidebar h3, .sidenote h4 {
-        font-size: 1em; /* Adjusted font size */
+        flex: 1 1 auto; /* Ensure cards take up available space */
     }
 }
